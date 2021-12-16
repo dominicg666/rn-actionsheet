@@ -5,6 +5,7 @@ const { width, height } = Dimensions.get('screen');
 const imageSrc  = require('./assets/bottom_nav.png');
 
 const ActionSheet = (props) => {
+    const { children } =props;
     const [alignment] = useState(new Animated.Value(0));
     const [arrowPossition,setArrowPossition] = useState(false);
     const bringUpActionSheet = () =>{
@@ -57,7 +58,7 @@ const ActionSheet = (props) => {
         {/* </View> */}
         </ImageBackground>
            <View style={styles.body}>
-
+                {children}
            </View>
     </Animated.View>)
 }

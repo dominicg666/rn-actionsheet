@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <View>
-      <ActionSheet />
+      <ActionSheet></ActionSheet>
     </View>
   );
 };
